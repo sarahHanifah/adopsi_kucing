@@ -1,0 +1,369 @@
+body{
+    height: 100%;
+    background-color: gainsboro !important;
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7F58AF;
+}
+
+form{
+    padding-top: 10px;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.login-form{
+    background-color: #f2f2f2 !important;
+    width: 380px;
+    height: 430px;
+    margin-top: 170px;
+}
+
+.card-title{
+    font-weight: 700;
+    padding-left: 5px;
+}
+
+.login-btn{
+    background: #7F58AF !important;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: white !important;
+    padding: 8px; 
+    transform: translateY(10px);
+    width: 100%;
+}
+
+.daftar-btn{
+    background: white !important;
+    border: black;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 15px;
+    color: black !important;
+    padding: 8px; 
+    border: black 2px solid;
+    /* transform: translateY(10px); */
+    width: 100%;
+}
+
+.lupa-password{
+    text-align: center;
+    padding-top: 25px;
+    color: black !important;
+}
+
+.a{
+    text-decoration: none;
+}
+
+.lupa-password a{
+    color: black !important;
+    text-decoration: none;
+}
+
+.fa{
+    font-size: 15px;
+}
+
+.catt{
+    font-size: 40px;
+    /* margin-bottom: -70px; */
+    color: #feb326;
+}
+
+/* Register */
+.kanan-register{
+    background-color: #7F58AF !important;
+}
+
+/* Home Page */
+.container-home{
+    height: 100%;
+    color: #7F58AF;
+}
+
+.navbar{
+    height: 60px;
+    background-color: #7F58AF !important;
+    color: black !important;
+    text-align: center;
+}
+
+.navbar-brand{
+    font-family: 'Pacifico';
+    font-size: 23px !important;
+}
+
+.brand-cat{
+    font-size: 35px;
+    color: #feb326;
+    padding-right: 20px;
+}
+
+.search-nav{
+    margin-top: -40px;
+}
+
+.navbar-nav{
+    font-size: 18px;
+}
+
+.nav-item{
+    margin: 10px 20px;
+}
+
+/* Landing Page */
+#home{
+    background: url('/assets/img/catlp.webp') no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    /* opacity: 0.5; */
+}
+#home:before{
+    opacity: 0.5;
+}
+
+.landing-text{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.landing-text h3{
+    font-size: 200%;
+    font-weight: 700;
+    color: white !important;
+    padding: 100px 0px 30px 0px;
+}
+
+.landing-text p{
+    font-size: 110%;
+    font-weight: 400;
+    color: white !important;
+    padding: 30px;
+    margin: 0px 190px;
+}
+
+.landing-text a{
+    background: #7F58AF;
+    border: #7F58AF solid 3px;
+    border-radius: 10px;
+    padding: 0px 50px;
+    margin-bottom: 100px;
+}
+
+.landing-text a:hover{
+    background: #7F58AF;
+    border: #7F58AF solid 3px;
+}
+
+/* .content{
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+} */
+
+.header-lp{
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 100px;
+    margin-bottom: -50px;
+    margin: 20px 0px -50px 100px;
+    background: #64C5EB !important;
+}
+
+.container-home-page{
+    background: #64C5EB !important;
+    /* width: 90%; */
+    /* padding: 100px; */
+    padding: 100px;
+    /* vertical-align: middle; */
+}
+
+.card-lp-outer{
+    background-color: #64C5EB !important;
+}
+
+.card-lp{
+    margin: 10px 0px;
+    height: 82%;
+}
+
+.card-title-lp{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.card-text-lp{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.img-fluid{
+    height: 170px !important;
+    width: 170px;
+}
+
+.btn-lihat{
+    background: #7F58AF !important;
+    font-size: 700;
+}
+
+/* Halaman Pencarian */
+.searchh{
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+/* Edit User */
+.blue-bg{
+    background-color: #64C5EB !important;
+    height: 150px;
+    margin-bottom: -100px;
+}
+
+.profile-header{
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+
+.profil-user{
+    background-color: #64C5EB !important;
+    height: 150px;
+    width: 150px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 100px 0px 70px 0px;
+}
+
+.profil-user i{
+    font-size: 100px;
+    color: #feb326 !important;
+    margin-top: 20px;
+}
+
+.user-profpic{
+    width: 120px;
+    height: 120px;
+    margin: 20px 0px;
+}
+
+.card-edit-user{
+    height: 120;
+}
+
+.card-edit-user-left{
+    margin-left: 100px;
+    height: 500px;
+    margin-bottom: 70px;
+}
+
+.card-edit-user-right{
+    margin-right: 100px;
+    height: 500px;
+
+}
+
+.card-text-edit-user{
+    margin-bottom: 20px;
+}
+
+.side-left-btn{
+    border-radius: 15px;
+    margin: 10px 30px;
+    background: #7F58AF !important;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white !important;
+    padding: 10px; 
+    width: 80%;
+}
+
+.input-edit{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.edit-user-btn{
+    background: #7F58AF !important;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: white !important;
+    padding: 5px; 
+    transform: translateX(75%);
+    width: 40%;
+    margin-top: 20px;
+}
+
+/* Posting Kucing */
+.card-upload{
+    width: 80%;
+    padding: 50px;
+    margin-bottom: 50px;
+    background: #64C5EB !important;
+}
+
+.posting-btn, .change-btn, .save-btn{
+    background: #7F58AF !important;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: white !important;
+    padding: 5px; 
+    width: 100%;
+    margin-top: 90px;
+}
+
+/* Edit Kucing */
+.change-btn, .save-btn{
+    background: #7F58AF !important;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: white !important;
+    padding: 5px; 
+    width: 100%;
+    margin-top: 30px;
+}
+
+.save-btn{
+    margin-top: 110px !important;
+}
+/* Footer */
+footer{
+    background-color: #7F58AF !important;
+    color: white !important;
+}
+
+.logout-btn{
+    background: #7F58AF !important;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: white !important;
+    border: white 3px solid;
+    border-radius: 10px;
+    padding: 8px; 
+    transform: translateY(10px);
+    width: 100%;
+}
+
+/* Copyright */
+.copyright{
+    background-color: #463062 !important;
+    color: white !important;
+    font-family: 'Pacifico';
+    font-size: 23px !important;
+}
