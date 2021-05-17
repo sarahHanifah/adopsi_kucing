@@ -53,7 +53,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="<?php echo base_url('user/logout')?>"><i
-                                        class="fa fa-sign-out-alt"></i></a>
+                                        class="fa fa-heart"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -167,6 +167,14 @@
                 </div>
             </div>
         </div>
+
+
+
+        
+
+
+
+
 
     </div>
 

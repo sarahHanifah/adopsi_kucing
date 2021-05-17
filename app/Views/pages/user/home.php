@@ -61,9 +61,7 @@
     <div id="home">
         <div class="landing-text">
             <h3>Welcome to Cat Adoption Comunity</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-                voluptatem veniam, est atque cumque eum delectus sint!</p><br>
+            <p>“Pets are humanizing. They remind us we have an obligation and responsibility to preserve and nurture and care for all life.” — James Cromwell</p><br>
             <a href="<?php echo base_url('Kucing/addKucing') ?>" class="btn btn-post btn-primary btn-lg">POST A CAT</a>
         </div>
     </div>
