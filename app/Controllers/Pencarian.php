@@ -15,7 +15,7 @@ class Pencarian extends BaseController
         $this->user = new userModel();
 	}
 
-    public function pencarian(){ //ini harusnya namanya index
+    public function pencarian(){
         $rk = new RasKucing();
 		$data = $rk->getRasKucing();
         $session = \Config\Services::session();

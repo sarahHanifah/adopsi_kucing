@@ -4,7 +4,6 @@ namespace App\Controllers;
 
 use App\Models\kotaModel;
 use App\Models\kucingModel;
-use App\Models\likesModel;
 use App\Models\rasKucingModel;
 use App\Models\userModel;
 
@@ -13,7 +12,6 @@ class User extends BaseController
     public function __construct()
 	{
         $this->user = new userModel();
-		$this->likes = new likesModel();
 		$this->kota = new kotaModel();
 		$this->kucing = new kucingModel();
 		$this->ras_kucing = new rasKucingModel();
@@ -78,11 +76,4 @@ class User extends BaseController
 		$session->destroy();
 		return redirect()->to(base_url('Login/index'));
 	}
-	
-	// public function keranjang() {
-	// 	$session = \Config\Services::session();
-	// 	$id = $session->get('id_user');
-	// 	$data['likes'] = $this->likes->getLikesByIdUser($id);
-	// 	return view('pages/user/r_keranjang', $data);
-	// }
 }

@@ -3,7 +3,6 @@
 namespace App\Controllers;
 
 use App\Models\kucingModel;
-use App\Models\likesModel;
 use App\Models\rasKucingModel;
 use App\Models\userModel;
 
@@ -13,7 +12,6 @@ class Kucing extends BaseController
 	{
 		helper('form');
 		$this->kucing = new kucingModel();
-		// $this->likes = new likesModel();
 		$this->ras_kucing = new rasKucingModel();
 		$this->user = new userModel();
 	}
@@ -23,12 +21,6 @@ class Kucing extends BaseController
 		$data['kucing'] = $this->kucing->getKucing();
 		return $data;
 	}
-
-	// public function getLikesByIdKucing($id) {
-
-	// 	$data['likes'] = $this->likes->getLikesByIdKucing($id);
-	// 	return $data;
-	// }
 
 	public function addKucing(){
 		$ras = new RasKucing();
@@ -121,14 +113,4 @@ class Kucing extends BaseController
 		$data['user'] = $this->user->getUserById($id_user_str);
 		return view('pages/user/r_lihatKucing', $data);
 	}
-
-	// public function like(){
-	// 	$session = \Config\Services::session();
-    //     $id_user = $session->get('id_user');
-	// 	// d($id_user);
-	// 	$likes = new Likes();
-	// 	$id_kucing=$this->request->getPost('id_kucing');
-	// 	// d($id_kucing);
-	// 	$likes->setLikes($id_user, $id_kucing);
-	// }
 }
