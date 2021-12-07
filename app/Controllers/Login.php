@@ -3,12 +3,14 @@
 namespace App\Controllers;
 
 use App\Models\userModel;
+use App\Models\rasKucingModel;
 
 class Login extends BaseController
 {
 	public function __construct()
 	{
 		$this->user = new userModel();
+		$this->ras_kucing = new rasKucingModel();
 	}
 
 	public function index()
@@ -16,7 +18,10 @@ class Login extends BaseController
 		$session = \Config\Services::session();
 		
 		if($session->get('id_user')){
-			return view('pages/user/home');
+			$pencarian = new Pencarian();
+			$data['rekomendasi'] = $pencarian->getRekomendasi();
+			$data['ras_kucing'] = $this->ras_kucing->getRasKucing();
+			return view('pages/user/home', $data);
 	  	}else{
 			return view('pages/login');
 		}
